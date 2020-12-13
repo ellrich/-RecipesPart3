@@ -19,7 +19,7 @@
             <div id="navBreadsticks">Fluffy Breadsticks</div>
             <div id="navTruffles">Easy Truffles</div>
             <div id="navRice">Sweet Rice</div>
-            <div id="navForm">Visitor Form</div>
+            <div id="navVisitor">Visitors</div>
         </section>
     </nav>
     <main>
@@ -240,13 +240,17 @@
                         <textarea name="comment" id="comment" cols="50" rows="10" placeholder="Enter comments here..."></textarea>
                     </li>
                     <li>
-                        <button id="submitBtn" type="submit">SUBMIT</button>
+                        <button class="button" type="submit">SUBMIT</button>
                     </li>
                 </ul>
             </form>
         </section>
         <section id="submitMessage" class="hidden">
             <p>Thank you for filling out the form!</p>
+        </section>
+        <section id="mainVisitors" class="hidden flex">
+            <button type="button" id="btnNewVistor" class="button">Add A New Visitor</button>
+            <section id="vistorsTable"></section>
         </section>
     </main>
     <footer>
@@ -259,13 +263,13 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/jquery-input-mask-phone-number.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
 
-    <script src="js/main.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/model.js"></script>
     <script src="js/validate.js"></script>
-    <script>
-        $(document).ready(function () {
-            initValidation("#visitorForm");
-        });
-      </script>
+    <script src="js/view.js"></script>
 </body>
 </html>

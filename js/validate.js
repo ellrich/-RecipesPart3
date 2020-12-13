@@ -28,6 +28,7 @@ function initValidation(formName) {
             // my work
             $("#mainForm").addClass("hidden");
             $("#submitMessage").removeClass("hidden");
+            submitForm()
         }
     })
 }
