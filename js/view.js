@@ -53,6 +53,7 @@ function clearForm() {
     $("#friend").prop('checked', false);
     $("#newspaper").prop('checked', false);
     $("#comment").val("");
+
 }
 
 function confirmDelete(id) {

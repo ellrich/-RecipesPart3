@@ -223,7 +223,19 @@ figcaption {
    letter-spacing: .1em;
    border-radius: 15px;
    box-shadow: black;
-   
+}
+
+.button:hover {
+   background-color: #ffa005;
+   cursor: pointer;
+}
+
+#btnCancel {
+   margin: 20px auto 0;
+   color: black;
+   background-color: #ff3c00;
+   padding: 15px;
+   font-size: 1em;
 }
 
 input:valid {

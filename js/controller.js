@@ -22,9 +22,12 @@ $(document).ready(function(){
         clearForm();
         show($("#mainForm"));
     });
+    $("#btnCancel").click(function(){
+        clearForm();
+        show($("#mainVisitors"));
+    });
     $("#navVisitor").click(loadVisitors());
     $("visitorForm").submit(submitForm());
-    $("")
 })
  
 function loadVisitors() {
